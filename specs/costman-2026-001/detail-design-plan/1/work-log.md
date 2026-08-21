@@ -17,3 +17,5 @@
 - 2026-08-21 21:19:44 [Mai Tamura@feature/costman-2026-001] `C:/Users/00056842/AppData/Local/Temp/claude/C--Biz---Copilot---------------React----AI-driven-development-0-0-1/9f6644c8-1a47-4c70-9f5b-09fd379354b1/scratchpad/ss-subissues-batch2.tsv`
 - 2026-08-21 21:21:27 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`
 - 2026-08-21 21:21:48 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`
+- 2026-08-21 21:40:00 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`
+- 2026-08-21 21:40:28 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/detail-design-plan/1/discussion-log.md`

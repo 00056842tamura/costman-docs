@@ -48,10 +48,10 @@
 |---|---|---|---|---|---|---|
 | SA | phase | | R001〜R007（旧設計書からの移行・issue未起票） | N/A | feature/costman-2026-001-sa | 事後記録 |
 | UI | phase | | R001〜R007（旧設計書からの移行・issue未起票） | N/A | feature/costman-2026-001-ui | 事後記録 |
-| SS-Plan | phase | 1 | | N/A | feature/costman-2026-001-ssplan | 完了（PR #2 マージ済み・SS sub-issue 7件先行起票済み） |
-| SS | task | #4(001) #5(002) #6(003) #7(004) #8(005) #9(006) #10(007) | front-intra-001〜007 | frontend | feature/costman-2026-001-ss-front-intra-### | 先行起票済み（frontendリポ）。front-intra-001(#4)・002(#5)は依存なし着手可、003〜007(#6-#10)は#5 blocked-by |
-| PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | |
-| PG | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-pg-front-intra-### | 事後記録 |
+| SS-Plan | phase | 1 | | N/A | feature/costman-2026-001-ssplan | クローズ（PR #2 マージ済み。SS sub-issue 7件は下記の通り別PRで完了判明のため全件クローズ） |
+| SS | task | #4(001) #5(002) #6(003) #7(004) #8(005) #9(006) #10(007) | front-intra-001〜007 | frontend | feature/costman-2026-001-ss-front-intra-### | 全件クローズ。costman-frontend PR #2（frontend実装の同期）でSS詳細設計（コンポーネント仕様書等）が既に完了・developへマージ済みと判明したため、正規ブランチでの着手はせずクローズ |
+| PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | 実施せず（SS/PGともcostman-frontend PR #2で完了済みのため） |
+| PG | task | | front-intra-001〜007 | frontend | feature/costman-2026-001-pg-front-intra-### | 実施せず（costman-frontend PR #2〔developマージ済み〕でsrc/features/配下に7機能実装済み。frontend.md WB・ADR-SS・review-reportは未整備・governance上の既知の欠落） |
 | PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | plan.md作成済み（sub-issue棚卸し完了・PRレビュー待ち） |
 | PT | task | | front-intra-001〜007 | frontend | feature/costman-2026-001-pt-front-intra-### | 未着手 |
 

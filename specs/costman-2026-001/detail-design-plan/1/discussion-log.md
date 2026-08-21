@@ -41,6 +41,17 @@ SS-Plan では対象外（`docs/base-design/` は UI issue 単位で `/basic-des
 
 ---
 
+## Phase 2: PR#2発見によるクローズ判断（2026-08-21）
+
+SS sub-issue（#4〜#10）の着手準備中、`frontend/`のローカルgitリポジトリに`feature/costman-2026-001-frontend-sync`ブランチが存在し、既にcostman-frontend PR #2（develop向け・「frontend実装の同期（costman-2026-001・旧世代実装を置き換え）」）としてfront-intra-001〜007全画面のSS詳細設計成果物（`docs/detail-design/コンポーネント仕様書_*.md`・画面アクション遷移図・共通設計書・メッセージ一覧）とPG実装（`src/features/`配下）が完了・push済みであることが判明した。
+
+ユーザー確認の上、PR #2をそのままマージし、本SS-Plan issue・SS sub-issue（#4〜#10）は完了済みとしてクローズする方針とした。
+
+**既知のgovernanceギャップ**（今後の課題として記録）:
+- `frontend/specs/costman-2026-001/detail-design/`相当のWB（`frontend.md`）・`ADR-SS-*`・`review-report.md`が作成されていない（PR #2は正規のSS工程スキル〔`/detailed-design-gen`・`/detailed-design-review-frontend`〕を経由せず生成されたため）
+- PR #2のベースブランチが`develop`であり、`feature/costman-2026-001`（frontendリポの統合ブランチ）を経由していない（同ブランチ自体がfrontendリポに存在しない）
+- front-intra-001の仕様書で「コンポーネント名: TopPage」と記載されているが実装は`Top.tsx`（軽微な命名不整合）
+
 ## 未解決事項・TODO
 
 <!-- 記法（docs-to-pr Step 0 が機械判定する書式。.claude/rules/github-ops.md §3-B「バックログ記録形式」参照）:
