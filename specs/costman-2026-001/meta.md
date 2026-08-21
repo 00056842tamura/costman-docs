@@ -8,7 +8,7 @@
 - プロダクト: コスト管理システム
 - パッケージ名: jp.co.costman
 - 案件統合ブランチ: feature/costman-2026-001
-- Milestone URL: （case-bootstrap.sh 実行後に記入）
+- Milestone URL: https://github.com/00056842tamura/costman-docs/milestone/1
 
 ## リポジトリ（3 リポ・`gh` の `--repo` に渡す／`.claude/rules/github-ops.md`）
 > ※記載する owner/repo は、あらかじめ人間がGitHub上に作成済みのリポジトリであること。存在しないリポジトリ名を記載した場合、`/case-init` 実行時にエラーで停止する（AIがリポジトリを新規作成することはない）。
