@@ -52,7 +52,7 @@
 | SS | task | #4(001) #5(002) #6(003) #7(004) #8(005) #9(006) #10(007) | front-intra-001〜007 | frontend | feature/costman-2026-001-ss-front-intra-### | 全件クローズ。costman-frontend PR #2（frontend実装の同期）でSS詳細設計（コンポーネント仕様書等）が既に完了・developへマージ済みと判明したため、正規ブランチでの着手はせずクローズ |
 | PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | 実施せず（SS/PGともcostman-frontend PR #2で完了済みのため） |
 | PG | task | | front-intra-001〜007 | frontend | feature/costman-2026-001-pg-front-intra-### | 実施せず（costman-frontend PR #2〔developマージ済み〕でsrc/features/配下に7機能実装済み。frontend.md WB・ADR-SS・review-reportは未整備・governance上の既知の欠落） |
-| PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | plan.md作成済み（sub-issue棚卸し完了・PRレビュー待ち） |
+| PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | plan.md作成済み（sub-issue棚卸し完了）。frontendリポの統合ブランチ`feature/costman-2026-001`をdevelop（PR#2マージ後）へfast-forwardした上でPR #3をrebase・force-push済み。差分クリーン化・PRレビュー待ち |
 | PT | task | | front-intra-001〜007 | frontend | feature/costman-2026-001-pt-front-intra-### | 未着手 |
 
 ## 手戻り管理表

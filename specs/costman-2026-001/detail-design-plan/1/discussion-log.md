@@ -48,9 +48,12 @@ SS sub-issue（#4〜#10）の着手準備中、`frontend/`のローカルgitリ�
 ユーザー確認の上、PR #2をそのままマージし、本SS-Plan issue・SS sub-issue（#4〜#10）は完了済みとしてクローズする方針とした。
 
 **既知のgovernanceギャップ**（今後の課題として記録）:
-- `frontend/specs/costman-2026-001/detail-design/`相当のWB（`frontend.md`）・`ADR-SS-*`・`review-report.md`が作成されていない（PR #2は正規のSS工程スキル〔`/detailed-design-gen`・`/detailed-design-review-frontend`〕を経由せず生成されたため）
-- PR #2のベースブランチが`develop`であり、`feature/costman-2026-001`（frontendリポの統合ブランチ）を経由していない（同ブランチ自体がfrontendリポに存在しない）
-- front-intra-001の仕様書で「コンポーネント名: TopPage」と記載されているが実装は`Top.tsx`（軽微な命名不整合）
+- `frontend/specs/costman-2026-001/detail-design/`相当のWB（`frontend.md`）・`ADR-SS-*`・`review-report.md`が作成されていない（PR #2は正規のSS工程スキル〔`/detailed-design-gen`・`/detailed-design-review-frontend`〕を経由せず生成されたため）。**未解消**
+- front-intra-001の仕様書で「コンポーネント名: TopPage」と記載されているが実装は`Top.tsx`（軽微な命名不整合）。**未解消**
+
+**解消済み（2026-08-21・フォローアップ）**:
+- ~~PR #2のベースブランチが`develop`であり、`feature/costman-2026-001`（frontendリポの統合ブランチ）を経由していない~~ → frontendリポの`feature/costman-2026-001`を`develop`（PR#2マージ後）へfast-forward済み（`ae7a2ae..273717d`）。PT-Plan issue-1のブランチ（`feature/costman-2026-001-ptplan`）もrebase・force-pushし、PR #3の差分をPT-Plan作業分（4ファイル）のみのクリーンな状態にした
+- ローカル`frontend/`作業ツリーを新実装（`develop`）に同期し、`npx tsc --noEmit`・`npx eslint src`・`npm run build`がいずれも成功することを確認済み（ユニットテストはPT工程で今後対応）
 
 ## 未解決事項・TODO
 
