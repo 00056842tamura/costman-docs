@@ -52,7 +52,7 @@
 | SS | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-ss-front-intra-### | 事後記録 |
 | PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | |
 | PG | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-pg-front-intra-### | 事後記録 |
-| PT-Plan | phase | | | frontend | feature/costman-2026-001-ptplan | |
+| PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | 着手中 |
 | PT | task | | front-intra-001〜007 | frontend | feature/costman-2026-001-pt-front-intra-### | 未着手 |
 
 ## 手戻り管理表
