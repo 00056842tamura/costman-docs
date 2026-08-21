@@ -52,7 +52,7 @@
 | SS | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-ss-front-intra-### | 事後記録 |
 | PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | |
 | PG | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-pg-front-intra-### | 事後記録 |
-| PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | 着手中 |
+| PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | plan.md作成済み（sub-issue棚卸し完了・PRレビュー待ち） |
 | PT | task | | front-intra-001〜007 | frontend | feature/costman-2026-001-pt-front-intra-### | 未着手 |
 
 ## 手戻り管理表
@@ -61,6 +61,7 @@
 
 | 手戻りID | 原因概要 | 発覚工程 | 影響工程 | 関連 issue | ステータス |
 |---|---|---|---|---|---|
+| sp-001 | `docs/base-design/テストシナリオ.md`（UI正本）が参照する `convertHiddenRow`（UT-3）・`axiosErrorHandling`（UT-9〜11の関数名・詳細挙動）が、現行PG実装（`frontend/src/`）に存在しない／異なる | PT-Plan（issue-1・front-intra-004,002/004/005/006/007横断） | UI（テストシナリオ.md）／PG（frontend実装）のいずれかまたは両方 | 未起票（本rework対応で新規issue起票が必要） | 対応中 |
 
 ## バックログ持ち越し管理表
 
