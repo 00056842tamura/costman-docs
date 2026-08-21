@@ -61,7 +61,7 @@
 
 | 手戻りID | 原因概要 | 発覚工程 | 影響工程 | 関連 issue | ステータス |
 |---|---|---|---|---|---|
-| sp-001 | `docs/base-design/テストシナリオ.md`（UI正本）が参照する `convertHiddenRow`（UT-3）・`axiosErrorHandling`（UT-9〜11の関数名・詳細挙動）が、現行PG実装（`frontend/src/`）に存在しない／異なる | PT-Plan（issue-1・front-intra-004,002/004/005/006/007横断） | UI（テストシナリオ.md）／PG（frontend実装）のいずれかまたは両方 | 未起票（本rework対応で新規issue起票が必要） | 対応中 |
+| sp-001 | `docs/base-design/テストシナリオ.md`（UI正本）が参照する `convertHiddenRow`（UT-3）・`axiosErrorHandling`（UT-9〜11の詳細挙動）が、現行PG実装（`frontend/src/`）に存在しなかった | PT-Plan（issue-1・front-intra-004,002/004/005/006/007横断） | PG（frontend実装。old_docs調査により実装不足と判明・テストシナリオ.mdの修正は不要） | 未起票（issue化せず直接実装追加で対応） | 完了（2026-08-21・`convertHiddenRow`/`useErrorHandling`のバリデーションエラー分岐を追加。frontendのpushは別途「ソース統合」で実施） |
 
 ## バックログ持ち越し管理表
 

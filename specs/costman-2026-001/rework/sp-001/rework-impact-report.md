@@ -25,12 +25,17 @@
 - **PG**: 上記の関数・挙動が本来必要な仕様であれば、`frontend/src/utils/commonUtil.ts`（`convertHiddenRow`）・`frontend/src/hooks/useErrorHandling.ts`（バリデーションエラー時の`detail[]`結合表示）の実装追加が必要
 - **PT**: 本不整合が解消されるまで、PT-Plan（issue-1）のsub-issue棚卸しでは、UT-3・UT-9〜11に相当するテスト対象は「実装に存在するものに限定」して棚卸しし、存在しない関数・挙動はテスト対象から除外する（`plan.md`に注記）
 
-## 推奨対応（次アクション・未実施）
-1. どちらが正か（テストシナリオが古い／実装が未完了）を判断する調査を行う（`old_docs/`の旧実装コードを確認するのが近道）
-2. 判断結果に応じて:
-   - テストシナリオが誤り・古い → UI issueを新規起票（`/issue-init 工程: UI`）し `docs/base-design/テストシナリオ.md` を修正
-   - 実装が不足 → PG issueを新規起票（`/issue-init 工程: PG`）し `frontend/src/` に実装を追加
-3. 対応後、本レポートのステータスを更新し、`specs/costman-2026-001/meta.md` の手戻り管理表を「完了」に更新する
+## 調査結果（2026-08-21実施）
+`old_docs/00.共通部品.md`・`old_docs/工番別収支データ参照画面(KOBANBETSU_SHUSHI)/04.画面・帳票編集仕様.md` を確認した結果、**両件ともテストシナリオ.mdの記載が正しく、PG実装側が不足していた**と判明した。
+
+- `old_docs/00.共通部品.md` §17「通信エラーハンドリング」item5: 「応答のエラーコードがバリデーションエラー（`error.unexpect.method-argument-not-valid`）で、かつ検証結果の明細がある場合、明細のメッセージを改行（`\r\n`）で連結し、エラー区分のトースト通知で表示する」と明記されている。
+- `old_docs/工番別収支データ参照画面(KOBANBETSU_SHUSHI)/04.画面・帳票編集仕様.md`（部署・社員番号・氏名の項目）: 「予実区分フラグが`0`（計画）の行は表示する。`1`（実算）の行は空欄とする」と明記されている。
+
+## 対応内容（2026-08-21実施・実装追加）
+- `frontend/src/utils/commonUtil.ts` に `convertHiddenRow` を追加し、`frontend/src/features/kobanbetsuShushi/components/KobanbetsuShushi.tsx` の収支一覧行データ生成部（`buildShushiListRows` の後段）に適用した。
+- `frontend/src/const/const.ts` に `SERVER_ERROR_CODE.VALIDATION_ERROR`（`'error.unexpect.method-argument-not-valid'`）を追加し、`frontend/src/hooks/useErrorHandling.ts` の `handleError` にバリデーションエラー時の `detail[].ValidationMessage` 改行結合表示ロジックを追加した。
+- `docs/base-design/テストシナリオ.md` の修正は不要（記載どおりの実装になったため）。
+- `frontend/specs/costman-2026-001/unit-test-plan/1/plan.md` のUT-3・UT-9〜11除外の注記を、実装追加後の内容に更新する。
 
 ## ステータス
-対応中（次アクション未着手）
+対応完了（2026-08-21・実装追加により解消。frontend/はローカルのみ・costman-frontendへのpushはIssue「frontend/ ソース統合」で別途実施）
