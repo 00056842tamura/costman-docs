@@ -48,8 +48,8 @@
 |---|---|---|---|---|---|---|
 | SA | phase | | R001〜R007（旧設計書からの移行・issue未起票） | N/A | feature/costman-2026-001-sa | 事後記録 |
 | UI | phase | | R001〜R007（旧設計書からの移行・issue未起票） | N/A | feature/costman-2026-001-ui | 事後記録 |
-| SS-Plan | phase | 1 | | N/A | feature/costman-2026-001-ssplan | plan.md作成済み・PR #2 レビュー待ち |
-| SS | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-ss-front-intra-### | 事後記録 |
+| SS-Plan | phase | 1 | | N/A | feature/costman-2026-001-ssplan | 完了（PR #2 マージ済み・SS sub-issue 7件先行起票済み） |
+| SS | task | #4(001) #5(002) #6(003) #7(004) #8(005) #9(006) #10(007) | front-intra-001〜007 | frontend | feature/costman-2026-001-ss-front-intra-### | 先行起票済み（frontendリポ）。front-intra-001(#4)・002(#5)は依存なし着手可、003〜007(#6-#10)は#5 blocked-by |
 | PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | |
 | PG | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-pg-front-intra-### | 事後記録 |
 | PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | plan.md作成済み（sub-issue棚卸し完了・PRレビュー待ち） |

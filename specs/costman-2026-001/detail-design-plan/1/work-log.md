@@ -8,3 +8,12 @@
 - 2026-08-21 20:59:20 [Mai Tamura@feature/costman-2026-001-ssplan] `specs/costman-2026-001/detail-design-plan/1/plan.md`
 - 2026-08-21 20:59:55 [Mai Tamura@feature/costman-2026-001-ssplan] `specs/costman-2026-001/detail-design-plan/1/discussion-log.md`
 - 2026-08-21 21:00:18 [Mai Tamura@feature/costman-2026-001-ssplan] `specs/costman-2026-001/detail-design-plan/1/meta.md`
+- 2026-08-21 21:13:48 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`
+- 2026-08-21 21:14:07 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/detail-design-plan/1/meta.md`
+- 2026-08-21 21:14:30 [Mai Tamura@feature/costman-2026-001] `C:/Users/00056842/AppData/Local/Temp/claude/C--Biz---Copilot---------------React----AI-driven-development-0-0-1/9f6644c8-1a47-4c70-9f5b-09fd379354b1/scratchpad/ss-subissues.tsv`
+- 2026-08-21 21:15:25 [Mai Tamura@feature/costman-2026-001] `C:/Users/00056842/AppData/Local/Temp/claude/C--Biz---Copilot---------------React----AI-driven-development-0-0-1/9f6644c8-1a47-4c70-9f5b-09fd379354b1/scratchpad/ss-subissues-batch1.tsv`
+- 2026-08-21 21:17:11 [Mai Tamura@feature/costman-2026-001] `C:/Users/00056842/AppData/Local/Temp/claude/C--Biz---Copilot---------------React----AI-driven-development-0-0-1/9f6644c8-1a47-4c70-9f5b-09fd379354b1/scratchpad/ss-subissues-batch1.tsv`
+- 2026-08-21 21:18:27 [Mai Tamura@feature/costman-2026-001] `C:/Users/00056842/AppData/Local/Temp/claude/C--Biz---Copilot---------------React----AI-driven-development-0-0-1/9f6644c8-1a47-4c70-9f5b-09fd379354b1/scratchpad/ss-subissues-batch1.tsv`
+- 2026-08-21 21:19:44 [Mai Tamura@feature/costman-2026-001] `C:/Users/00056842/AppData/Local/Temp/claude/C--Biz---Copilot---------------React----AI-driven-development-0-0-1/9f6644c8-1a47-4c70-9f5b-09fd379354b1/scratchpad/ss-subissues-batch2.tsv`
+- 2026-08-21 21:21:27 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`
+- 2026-08-21 21:21:48 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`

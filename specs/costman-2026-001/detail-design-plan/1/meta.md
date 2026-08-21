@@ -26,7 +26,7 @@
 - [x] 検討・壁打ち中
 - [x] 成果物作成完了（plan.md・specs配下）
 - [x] 工程ゲート PR 作成済み・レビュー待ち
-- [ ] マージ完了
+- [x] マージ完了
 
 ## PR 情報
 - PR URL: https://github.com/00056842tamura/costman-docs/pull/2
