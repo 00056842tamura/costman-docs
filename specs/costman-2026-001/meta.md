@@ -48,7 +48,7 @@
 |---|---|---|---|---|---|---|
 | SA | phase | | R001〜R007（旧設計書からの移行・issue未起票） | N/A | feature/costman-2026-001-sa | 事後記録 |
 | UI | phase | | R001〜R007（旧設計書からの移行・issue未起票） | N/A | feature/costman-2026-001-ui | 事後記録 |
-| SS-Plan | phase | | | N/A | feature/costman-2026-001-ssplan | |
+| SS-Plan | phase | 1 | | N/A | feature/costman-2026-001-ssplan | 着手（issue-1・plan.md作成中） |
 | SS | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-ss-front-intra-### | 事後記録 |
 | PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | |
 | PG | task | | front-intra-001〜007（issue未起票） | frontend | feature/costman-2026-001-pg-front-intra-### | 事後記録 |
