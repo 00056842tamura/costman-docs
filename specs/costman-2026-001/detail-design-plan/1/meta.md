@@ -25,12 +25,12 @@
 - [x] 着手（issue起票・ブランチ作成・作業ディレクトリ準備）
 - [x] 検討・壁打ち中
 - [x] 成果物作成完了（plan.md・specs配下）
-- [ ] 工程ゲート PR 作成済み・レビュー待ち
+- [x] 工程ゲート PR 作成済み・レビュー待ち
 - [ ] マージ完了
 
 ## PR 情報
-- PR URL:
-- PR番号:
+- PR URL: https://github.com/00056842tamura/costman-docs/pull/2
+- PR番号: 2
 - マージ先: feature/costman-2026-001
 
 ## チケット連携
