@@ -1,0 +1,22 @@
+# リポジトリ情報（個人ローカル・.gitignore対象）
+
+> このファイルをコピーして `.claude/repositories.local.md` を作成し、値を記入してください。
+> `.claude/repositories.local.md` は `.gitignore` により git 管理対象外です（このファイル自身はテンプレートとして通常コミットされます）。
+>
+> 案件リポ・③各スタックリポは「プロダクトにつき1つを使い回す」設計です（`docs/onboarding/gh-cli-setup.md` 参照）。
+> ここに一度記録しておけば、`/case-init` 実行時に owner/repo を毎回入力する必要がなくなります
+> （`/case-init` が本ファイルを検出できない場合は入力を求め、入力値から本ファイルを新規作成します）。
+>
+> ※ここに記載する owner/repo は、あらかじめ人間がGitHub上に作成済みのリポジトリであること。存在しないリポジトリ名を記載した場合、`/case-init` 実行時にエラーで停止する（AIがリポジトリを新規作成することはない）。
+
+## 案件リポ
+- owner/repo:
+
+## スタックリポ
+| スタック | owner/repo |
+|---|---|
+| bs | |
+| frontend | |
+| us-api | |
+| us-mpa | |
+| batch | |

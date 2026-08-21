@@ -1,0 +1,69 @@
+# ===== 個人設定・個人スキル（チームに展開しない） =====
+
+# 個人スキル（deploy-prep 等）
+
+# Claude Code 個人設定
+.claude/settings.local.json
+
+# log_llm_usage.py の診断ログ（オプトイン・.claude/.hook-debug-enabled の存在または
+# 環境変数 CLAUDE_HOOK_DEBUG=1 で有効化。既定は無効・本番の llm-usage.jsonl とは別ファイル）
+.claude/.hook-debug-enabled
+.claude/hook-debug.log
+
+# issue-init が着手時に書き込むスコープ確定マーカー（ローカル・未追跡・案件リポ側）
+# スタックリポ側は標準チーム受領テンプレート由来の .gitignore を各リポで個別に確認・追記する
+# （.claude/skills/issue-init/SKILL.md Step S2 参照）
+.claude/.issue-scope.json
+
+# 個人ローカルのリポジトリURL台帳（案件リポ・スタックリポの owner/repo）
+# ひな形は .claude/repositories.local.md.example（通常コミット）
+.claude/repositories.local.md
+
+# ===== ビルド成果物 =====
+
+# Maven
+**/target/
+
+# Node.js
+**/node_modules/
+
+# ===== OS・エディタ =====
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IntelliJ IDEA / VS Code
+.idea/
+*.iml
+.vscode/
+
+# ===== 案件対応リポジトリ運用（マルチリポ）=====
+
+# specs/ は LLM 利用の中間生成物（discussion-log・ADR・plan.md・work-log 等）だが、
+# 他の設計ドキュメント資材と同様に通常の git 管理対象とし、案件リポへ push する。
+# 旧運用（specs/{案件キー}/ を除外し issue 添付を SSOT とする方式）は廃止済み。
+
+# ===== _templates/ 受領資材（標準チーム配布物。常に最新版を都度受領するためリモートに上げない）=====
+# ディレクトリ自体（_received/）は /stack-init の受け皿として git 管理し .gitkeep で存在を維持する。
+# 配下に配置された実資材（zip 展開後のワイヤーフレーム）のみを除外する
+# （_received/ を丸ごと除外〔末尾スラッシュ〕にすると .gitkeep も再追跡できなくなるため、
+#  「配下の全エントリを除外→.gitkeep のみ再許可」の2行構成にする）。
+_templates/**/_received/*
+!_templates/**/_received/.gitkeep
+
+# スタックリポジトリは案件リポ配下にローカルチェックアウトするが管理対象外（別リポジトリ）。
+# 全スタックをデフォルトで除外する。使用しないスタックはコメントアウトしてよい。
+# ⚠️ ここを有効化せずにスタックリポを clone すると案件リポへ誤 commit するリスクがある
+/bs/
+/frontend/
+/us-api/
+/us-mpa/
+/batch/
+
+# Python（フック実行時の自動生成キャッシュ）
+**/__pycache__/
+*.pyc

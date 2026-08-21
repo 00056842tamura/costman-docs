@@ -1,0 +1,30 @@
+# Spring Boot 設定ファイル（US-API アプリ用サンプル）
+
+spring:
+  application:
+    name: ${product}-us-api
+
+server:
+  port: 8082
+
+# Springer マスキング設定
+springer:
+  masking:
+    enabled: true
+  # JSON 全項目で空文字→null 変換（@RequestBody 用）
+  jackson:
+    object-mapper:
+      empty-to-null-string: true
+
+# BS API 接続先（実プロダクトで設定）
+bs:
+  api:
+    base-url: http://localhost:8080
+    connect-timeout: 3s
+    read-timeout: 10s
+
+# ログレベル
+logging:
+  level:
+    root: INFO
+    jp.co.example: DEBUG

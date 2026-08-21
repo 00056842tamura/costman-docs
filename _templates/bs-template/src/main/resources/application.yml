@@ -1,0 +1,32 @@
+# Spring Boot 設定ファイル（BS アプリ用サンプル）
+# 実プロダクト作成時にこの内容を実環境に合わせて編集してください
+
+spring:
+  application:
+    name: ${product}-bs
+
+server:
+  port: 8080
+
+# MyBatis 設定
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+# Springer マスキング設定（デフォルト有効）
+springer:
+  masking:
+    enabled: true
+
+# データソース設定（実プロダクトで設定）
+# spring:
+#   datasource:
+#     url: jdbc:postgresql://localhost:5432/{product}
+#     username: ${DB_USER}
+#     password: ${DB_PASSWORD}
+
+# ログレベル
+logging:
+  level:
+    root: INFO
+    jp.co.example: DEBUG

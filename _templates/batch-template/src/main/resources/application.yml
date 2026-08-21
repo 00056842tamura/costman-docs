@@ -1,0 +1,30 @@
+# Spring Boot 設定ファイル（バッチアプリ用サンプル）
+
+spring:
+  application:
+    name: ${product}-batch
+  main:
+    web-application-type: none  # バッチは Web サーバを起動しない
+
+# MyBatis 設定
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+# Springer マスキング設定
+springer:
+  masking:
+    enabled: true
+
+# データソース設定（実プロダクトで設定）
+# spring:
+#   datasource:
+#     url: jdbc:postgresql://localhost:5432/{product}
+#     username: ${DB_USER}
+#     password: ${DB_PASSWORD}
+
+# ログレベル
+logging:
+  level:
+    root: INFO
+    jp.co.example: DEBUG

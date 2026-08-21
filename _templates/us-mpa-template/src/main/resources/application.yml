@@ -1,0 +1,32 @@
+# Spring Boot 設定ファイル（US-MPA アプリ用サンプル）
+
+spring:
+  application:
+    name: ${product}-us-mpa
+  thymeleaf:
+    cache: false  # 開発時のみ false、本番は true
+
+server:
+  port: 8081
+
+# Springer マスキング設定
+springer:
+  masking:
+    enabled: true
+  # Form の空文字→null 自動変換（デフォルト true）
+  validator:
+    string-trimmer-editor-controller-advice:
+      trim: true
+
+# BS API 接続先（実プロダクトで設定）
+bs:
+  api:
+    base-url: http://localhost:8080
+    connect-timeout: 3s
+    read-timeout: 10s
+
+# ログレベル
+logging:
+  level:
+    root: INFO
+    jp.co.example: DEBUG
