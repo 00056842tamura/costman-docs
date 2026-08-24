@@ -22,3 +22,7 @@
 - 2026-08-21 21:59:16 [Mai Tamura@feature/costman-2026-001] `生成レポート/frontend設計書駆動再生成_作業状況レポート_20260821.md`
 - 2026-08-21 22:03:55 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`
 - 2026-08-21 22:04:18 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/detail-design-plan/1/discussion-log.md`
+- 2026-08-21 22:05:20 [Mai Tamura@feature/costman-2026-001] `生成レポート/frontend設計書駆動再生成_作業状況レポート_20260821.md`
+- 2026-08-24 10:32:49 [Mai Tamura@feature/costman-2026-001] `C:/Users/00056842/.claude/plans/frontend-c-pleiades2025-workspace-ctm-co-bright-river.md`
+- 2026-08-24 10:39:25 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`
+- 2026-08-24 10:39:42 [Mai Tamura@feature/costman-2026-001] `specs/costman-2026-001/meta.md`
