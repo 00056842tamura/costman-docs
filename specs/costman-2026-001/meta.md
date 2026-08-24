@@ -49,7 +49,7 @@
 | SA | phase | | R001〜R007（旧設計書からの移行・issue未起票） | N/A | feature/costman-2026-001-sa | 事後記録 |
 | UI | phase | | R001〜R007（旧設計書からの移行・issue未起票） | N/A | feature/costman-2026-001-ui | 事後記録 |
 | SS-Plan | phase | 1 | | N/A | feature/costman-2026-001-ssplan | クローズ（PR #2 マージ済み。SS sub-issue 7件は下記の通り別PRで完了判明のため全件クローズ） |
-| SS | task | #4(001) #5(002) #6(003) #7(004) #8(005) #9(006) #10(007) | front-intra-001〜007 | frontend | feature/costman-2026-001-ss-front-intra-### | 全件クローズ。costman-frontend PR #2（frontend実装の同期）でSS詳細設計（コンポーネント仕様書等）が既に完了・developへマージ済みと判明したため、正規ブランチでの着手はせずクローズ |
+| SS | task | #4(001) #5(002) #6(003) #7(004) #8(005) #9(006) #10(007) | front-intra-001〜007 | frontend | feature/costman-2026-001-ss-front-intra-###（手戻り再開分は `-sp-002` 付与） | 手戻りsp-002によりReopen（2026-08-24）。front-intra-001: PR #12 作成済み・レビュー待ち（`feature/costman-2026-001-ss-front-intra-001-sp-002`）。front-intra-002〜007: 未着手（Reopen済み・ブランチ作成済み） |
 | PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | 実施せず（SS/PGともcostman-frontend PR #2で完了済みのため） |
 | PG | task | | front-intra-001〜007 | frontend | feature/costman-2026-001-pg-front-intra-### | 実施せず（costman-frontend PR #2〔developマージ済み〕でsrc/features/配下に7機能実装済み。frontend.md WB・ADR-SS・review-reportは未整備・governance上の既知の欠落）。事後修正: PR #11（`.env.development`/`.env.prod`のセッションタイムアウト設定値を仕様〔1時間・タイムアウト30秒前警告〕に修正、マージ済み2026-08-24） |
 | PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | クローズ（PR #3 マージ済み・issue #1 クローズ済み2026-08-24）。plan.md作成済み・sub-issue棚卸し完了 |
@@ -62,6 +62,7 @@
 | 手戻りID | 原因概要 | 発覚工程 | 影響工程 | 関連 issue | ステータス |
 |---|---|---|---|---|---|
 | sp-001 | `docs/base-design/テストシナリオ.md`（UI正本）が参照する `convertHiddenRow`（UT-3）・`axiosErrorHandling`（UT-9〜11の詳細挙動）が、現行PG実装（`frontend/src/`）に存在しなかった | PT-Plan（issue-1・front-intra-004,002/004/005/006/007横断） | PG（frontend実装。old_docs調査により実装不足と判明・テストシナリオ.mdの修正は不要） | 未起票（issue化せず直接実装追加で対応） | 完了（2026-08-21・`convertHiddenRow`/`useErrorHandling`のバリデーションエラー分岐を追加。frontendのpushは別途「ソース統合」で実施） |
+| sp-002 | costman-frontend PR #2（frontend実装の同期）が正規のSS工程スキル（`/detailed-design-gen`→`/detailed-design-review-frontend`）・PG工程スキル（`/reacter-code-gen`→`/reacter-code-review`）を経由せずに生成され、`frontend.md`（WB）・`ADR-SS-*`・`review-report.md`・`reacter-code-review-report.md` が front-intra-001〜007 いずれも未整備。本体PR（develop向け）はマージ済みのため `cross-process-consistency.md`「本体PRマージ後に発覚した場合の手戻り判定」に従い手戻り相当として扱う | 本セッションでのユーザーとの対話調査（2026-08-24） | SS・PG（frontend実装。7機能ID全て・スタック内で影響が閉じる） | SS: #4〜#10（Reopen済み）／PG: 未起票（新規起票予定） | 対応中（front-intra-001: SS PR #12 作成済み・レビュー待ち。front-intra-002〜007: SS未着手。対応計画: `生成レポート/frontend正規フロー再生成計画_20260824.md`。詳細: `specs/costman-2026-001/rework/sp-002/rework-impact-report.md`） |
 
 ## バックログ持ち越し管理表
 
