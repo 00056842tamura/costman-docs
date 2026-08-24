@@ -51,7 +51,7 @@
 | SS-Plan | phase | 1 | | N/A | feature/costman-2026-001-ssplan | クローズ（PR #2 マージ済み。SS sub-issue 7件は下記の通り別PRで完了判明のため全件クローズ） |
 | SS | task | #4(001) #5(002) #6(003) #7(004) #8(005) #9(006) #10(007) | front-intra-001〜007 | frontend | feature/costman-2026-001-ss-front-intra-###（手戻り再開分は `-sp-002` 付与） | 手戻りsp-002によりReopen（2026-08-24）。front-intra-001〜007全件、SS正規再生成PR作成・レビュー（全件「PR提出可」）・**マージ完了**（PR #12〜#18、2026-08-24 10:02〜10:11 UTC・feature/costman-2026-001へマージ済み）。front-intra-002〜007では実装との不整合（存在しないコンポーネント分割・状態管理方式の記述誤り・画面状態遷移図の簡略化）を検出・修正済み。front-intra-007では追加でAPI定義書（bs-007/008/009のStatus Code 403）と実装（HANDLING_STATUS_CODE定数）の不整合を検出しPG工程へのバックログとして記録（ADR-SS-1・PG工程で対応予定） |
 | PG-Plan | phase | | | frontend | feature/costman-2026-001-pgplan | 実施せず（SS/PGともcostman-frontend PR #2で完了済みのため） |
-| PG | task | #19(007完了)・#21(001完了) | front-intra-001〜007 | frontend | feature/costman-2026-001-pg-front-intra-###-sp-002 | 手戻りsp-002対応として着手（2026-08-24）。front-intra-007（issue #19・PR #20）・front-intra-001（issue #21・PR #22）完了・レビュー待ち。いずれも`/reacter-code-gen`→`/reacter-code-review`（観点台帳クラスタ別2パス検証）を実施。front-intra-007: `HANDLING_STATUS_CODE`への403追加・ADR-SS-1バックログ解消。front-intra-001: 型定義切り出し・try-catch追加・as const付与。全機能ID横断の既存課題（COM-01・QLT-22）はADR-PG-1.mdにバックログ化。残り5機能ID（002〜006）へ展開中。事後修正: PR #11（`.env.development`/`.env.prod`のセッションタイムアウト設定値を仕様〔1時間・タイムアウト30秒前警告〕に修正、マージ済み2026-08-24） |
+| PG | task | #19(007完了)・#21(001完了)・#23(002完了) | front-intra-001〜007 | frontend | feature/costman-2026-001-pg-front-intra-###-sp-002 | 手戻りsp-002対応として着手（2026-08-24）。front-intra-007（issue #19・PR #20）・front-intra-001（issue #21・PR #22）・front-intra-002（issue #23・PR #24）完了・レビュー待ち。いずれも`/reacter-code-gen`→`/reacter-code-review`（観点台帳クラスタ別2パス検証）を実施。front-intra-007: `HANDLING_STATUS_CODE`への403追加。front-intra-001: 型定義切り出し・try-catch追加・as const付与。front-intra-002: レイアウトCSS修正（CSS-04）。全機能ID横断の既存課題（COM-01・QLT-22）はADR-PG-1.mdにバックログ化。front-intra-002ではUI工程正本（docs/base-design/）のSS修正未追従も検出しmeta.mdバックログ持ち越し管理表No.1〜4に記録。残り4機能ID（003〜006）へ展開中。事後修正: PR #11（`.env.development`/`.env.prod`のセッションタイムアウト設定値を仕様〔1時間・タイムアウト30秒前警告〕に修正、マージ済み2026-08-24） |
 | PT-Plan | phase | 1 | | frontend | feature/costman-2026-001-ptplan | クローズ（PR #3 マージ済み・issue #1 クローズ済み2026-08-24）。plan.md作成済み・sub-issue棚卸し完了 |
 | PT | task | | front-intra-001〜007 | frontend | feature/costman-2026-001-pt-front-intra-### | 未着手 |
 
@@ -70,6 +70,10 @@
 
 | No | 発生工程 | 発生issue | 項目概要 | 承認先工程 | 承認者 | 承認日 | ステータス |
 |---|---|---|---|---|---|---|---|
+| 1 | PG（front-intra-002・issue #23） | costman-frontend #23 | `docs/base-design/画面状態遷移図_front-intra-002.md`(L20)のコンポーネント名「LoginPage」→「Login」に修正（SS工程の正本更新に未追従） | UI | Mai Tamura | 2026-08-24 | 未対応 |
+| 2 | PG（front-intra-002・issue #23） | costman-frontend #23 | `docs/base-design/画面状態遷移図_front-intra-002.md`(L39)のエラー応答ステータス「400/401/404/409」→「401のみ」に修正（SS工程の正本更新に未追従） | UI | Mai Tamura | 2026-08-24 | 未対応 |
+| 3 | PG（front-intra-002・issue #23） | costman-frontend #23 | `docs/base-design/機能概要_front-intra-002.md`(L31)・`テストシナリオ.md`(L149,L151)の遷移元パス項目名「`from`」→「`pathname`」に修正（SS工程の正本更新に未追従） | UI | Mai Tamura | 2026-08-24 | 未対応 |
+| 4 | PG（front-intra-002・issue #23） | costman-frontend #23 | `docs/base-design/テストシナリオ.md`(L98)の自動ログアウト記述精度の修正（401時は無条件でタイマー起動する実装と厳密には不一致） | UI | Mai Tamura | 2026-08-24 | 未対応 |
 
 ## 関連
 - 要件ID採番の正本: `docs/requirements/要件一覧.md`
