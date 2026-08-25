@@ -79,6 +79,8 @@
 | 7 | PG（front-intra-004・issue #27） | costman-frontend #27 | `docs/base-design/画面状態遷移図_front-intra-004.md`(L22)の`pinedColumnWidth`（実装に存在しない）・`kobanData`（実際は`kobanList`）・`nendoList`の管理方法（useMemo。誤ってuseStateと記載）を修正（SS工程の正本更新に未追従） | UI | Mai Tamura | 2026-08-24 | 未対応 |
 | 8 | PG（front-intra-004・issue #27） | costman-frontend #27 | 並び替え条件フォーム（KobanbetsuShushi.tsx）のReact Hook Form+Zod化、またはSS正本設計（useState）の正式維持の決定 | SS（再検討） | Mai Tamura | 2026-08-24 | 未対応 |
 | 9 | PG（front-intra-004・issue #27） | costman-frontend #27 | 工番別収支検索API（bs-005）・工番検索API（bs-004）の取得件数上限値の決定 | UI/SS | Mai Tamura | 2026-08-24 | 未対応 |
+| 10 | PG（front-intra-005・issue #29） | costman-frontend #29 | コスト利用率検索API（bs-003）の取得件数上限値の決定 | UI/SS | Mai Tamura | 2026-08-25 | 未対応 |
+| 11 | PG（front-intra-005・issue #29） | costman-frontend #29 | `docs/base-design/画面状態遷移図_front-intra-005.md`(L61)の`nendo`初期値記述「最終年度」→配列順序と矛盾しない表現（例:「先頭（最新年度）」）への修正 | UI | Mai Tamura | 2026-08-25 | 未対応 |
 
 ## 関連
 - 要件ID採番の正本: `docs/requirements/要件一覧.md`
